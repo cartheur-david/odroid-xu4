@@ -11,3 +11,4 @@ This board was chosen due primarily to the long-term survivability of the XU4. I
 First step is to get the MPU6050 talking to the GPIO.
 
 * Library is [here](/gpio/README.md)
+* Build for dynamixel [here](/build/)
