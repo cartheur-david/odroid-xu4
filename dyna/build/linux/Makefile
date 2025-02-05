@@ -102,15 +102,6 @@ reinstall: uninstall install
 $(DIR_OBJS)/%.o: $(DIR_DXL)/src/dynamixel_sdk/%.c
 	$(CC) $(CCFLAGS) -c $? -o $@
 
-$(DIR_OBJS)/%.o: $(DIR_DXL)/src/dynamixel_sdk/%.cpp
-	$(CX) $(CXFLAGS) -c $? -o $@
-
-$(DIR_OBJS)/%.o: $(DIR_DXL)/src/dynamixel_sdk/%.c
-	$(CC) $(CCFLAGS) -c $? -o $@
-
-$(DIR_OBJS)/%.o: $(DIR_DXL)/src/dynamixel_sdk/%.cpp
-	$(CX) $(CXFLAGS) -c $? -o $@
-
 #---------------------------------------------------------------------
 # END OF MAKEFILE
 #---------------------------------------------------------------------
