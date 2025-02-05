@@ -67,7 +67,7 @@ makedirs:
 	mkdir -p $(DIR_OBJS)/
 
 clean:
-	rm -f $(OBJECTS) ./$(TARGET)
+	rm -rf $(TARGET) $(DIR_OBJS) core *~ *.a *.so *.lo
 
 install: $(TARGET)
     # copy the binaries into the lib directory
