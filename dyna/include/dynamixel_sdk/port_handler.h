@@ -4,16 +4,6 @@
 
 #define WINDECLSPEC
 
-
-#ifdef __GNUC__
-#define DEPRECATED __attribute__((deprecated))
-#elif defined(_MSC_VER)
-#define DEPRECATED __declspec(deprecated)
-#else
-#pragma message("WARNING: You need to implement DEPRECATED for this compiler")
-#define DEPRECATED
-#endif
-
 #include "robotis_def.h"
 
 static const int DEFAULT_BAUDRATE = 57600;
@@ -33,9 +23,7 @@ WINDECLSPEC char   *getPortName             (int port_num);
 WINDECLSPEC uint8_t setBaudRate             (int port_num, const int baudrate);
 WINDECLSPEC int     getBaudRate             (int port_num);
 
-#if defined(__linux__) || defined(__APPLE__)
 WINDECLSPEC int     getBytesAvailable       (int port_num);
-#endif
 
 WINDECLSPEC int     readPort                (int port_num, uint8_t *packet, int length);
 WINDECLSPEC int     writePort               (int port_num, uint8_t *packet, int length);
