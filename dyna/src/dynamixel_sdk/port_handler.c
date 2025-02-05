@@ -2,6 +2,11 @@
 #include "port_handler.h"
 #include "port_handler_linux.h"
 
+static const int DEFAULT_BAUDRATE = 57600;
+
+int g_used_port_num;
+uint8_t *g_is_using;
+
 int     portHandler         (const char *port_name) { return portHandlerLinux(port_name); }
 
 uint8_t openPort            (int port_num) { return openPortLinux(port_num); }

@@ -32,6 +32,9 @@
 
 #define ERRBIT_ALERT            128     //When the device has a problem, this bit is set to 1. Check "Device Status Check" value.
 
+extern PacketData *packetData;  // defined in packet_handler.c
+extern uint8_t *g_is_using;     // defined in port_handler.c
+
 const char *getTxRxResult2(int result)
 {
   switch (result)

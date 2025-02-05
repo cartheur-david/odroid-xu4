@@ -5,6 +5,9 @@
 #include "protocol1_packet_handler.h"
 #include "protocol2_packet_handler.h"
 
+PacketData *packetData;
+extern int g_used_port_num; // defined in port_handler.c
+
 void packetHandler()
 {
   int port_num;

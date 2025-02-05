@@ -4,6 +4,8 @@
 
 #include "group_bulk_read.h"
 
+extern PacketData *packetData;  // defined in packet_handler.c
+
 typedef struct
 {
   uint8_t     id;

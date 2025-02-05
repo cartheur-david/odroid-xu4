@@ -3,6 +3,7 @@
 
 #include "group_sync_write.h"
 
+extern PacketData *packetData;  // defined in packet_handler.c
 
 typedef struct
 {

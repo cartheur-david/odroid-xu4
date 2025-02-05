@@ -56,7 +56,6 @@ typedef struct
   uint8_t     *broadcast_ping_id_list;
 }PacketData;
 
-PacketData *packetData;
 
 WINDECLSPEC void        packetHandler       ();
 
