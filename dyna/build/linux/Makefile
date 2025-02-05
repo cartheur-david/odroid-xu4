@@ -96,7 +96,7 @@ reinstall: uninstall install
 
 
 #---------------------------------------------------------------------
-# Make rules for all .c and .cpp files in each directory
+# Make rules for all .c files in each directory
 #---------------------------------------------------------------------
 
 $(DIR_OBJS)/%.o: $(DIR_DXL)/src/dynamixel_sdk/%.c
